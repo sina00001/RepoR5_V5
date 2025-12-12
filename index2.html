@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias del hoy | Últimas noticias y actualizaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="date-time">
+                    <span id="current-date"></span>
+                    <span id="current-time"></span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container logo-area">
+                <div class="logo">
+                    <h1>MendozaFlores<span>News</span></h1>
+                    <p class="tagline">Aquí encontraras las noticias mas destacadas proporcionadas por un alumno de la Uveg</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for news..." id="search-input">
+                    <button id="search-button" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="active"><a href="#" data-category="general"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#" data-category="world"><i class="fas fa-globe"></i> Mundo</a></li>
+                    <li><a href="#" data-category="business"><i class="fas fa-chart-line"></i> Negocios</a></li>
+                    <li><a href="#" data-category="technology"><i class="fas fa-laptop"></i> Tecnología</a></li>
+                    <li><a href="#" data-category="health"><i class="fas fa-heartbeat"></i> Salud</a></li>
+                    <li><a href="#" data-category="sports"><i class="fas fa-futbol"></i> Deportes</a></li>
+                    <li><a href="#" data-category="entertainment"><i class="fas fa-film"></i> Entretenimiento</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Featured News Section -->
+            <div class="news-grid">
+                <section class="main-news" aria-labelledby="featured-heading">
+                    <h2 id="featured-heading" class="visually-hidden">Noticias Destacadas</h2>
+                    <article class="featured-article">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                                 alt="Global leaders at climate summit conference table">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="article-content">
+                            <span class="category">NOTICIAS MUNDIALES</span>
+                            <h3>Global Leaders Gather for Climate Summit in Paris</h3>
+                            <p>World leaders from over 100 countries convene to discuss urgent climate action and new environmental policies aimed at reducing carbon emissions by 2030.</p>
+                            <div class="article-meta">
+                                <span class="author">By Sarah Johnson</span>
+                                <span class="publish-time">3 hours ago</span>
+                            </div>
+                            <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </section>
+                
+                <aside class="sidebar-news" aria-labelledby="top-stories-heading">
+                    <h3 id="top-stories-heading">Top Stories</h3>
+                    <div class="sidebar-stories">
+                        <article class="sidebar-item">
+                            <div class="sidebar-image">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                     alt="AI technology circuit board" class="sidebar-img">
+                            </div>
+                            <div class="sidebar-content">
+                                <h4><a href="#">New AI Technology Breaks Performance Records</a></h4>
+                                <div class="sidebar-meta">Tech • 2 hours ago</div>
+                            </div>
+                        </article>
+                        
+                        <article class="sidebar-item">
+                            <div class="sidebar-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Stock market trading floor" class="sidebar-img">
+                            </div>
+                            <div class="sidebar-content">
+                                <h4><a href="#">Stock Markets Reach All-Time High Amid Economic Recovery</a></h4>
+                                <div class="sidebar-meta">Business • 4 hours ago</div>
+                            </div>
+                        </article>
+                        
+                        <article class="sidebar-item">
+                            <div class="sidebar-image">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Football players celebrating victory" class="sidebar-img">
+                            </div>
+                            <div class="sidebar-content">
+                                <h4><a href="#">National Team Wins Championship After Dramatic Final</a></h4>
+                                <div class="sidebar-meta">Sports • 5 hours ago</div>
+                            </div>
+                        </article>
+                        
+                        <article class="sidebar-item">
+                            <div class="sidebar-image">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Medical researcher in laboratory" class="sidebar-img">
+                            </div>
+                            <div class="sidebar-content">
+                                <h4><a href="#">Breakthrough in Cancer Treatment Shows Promising Results</a></h4>
+                                <div class="sidebar-meta">Salud • 6 hours ago</div>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+            
+            <!-- Latest News Section -->
+            <section class="latest-section" aria-labelledby="latest-news-heading">
+                <div class="section-header">
+                    <h2 id="latest-news-heading">Últimas Noticias</h2>
+                    <a href="#" class="view-all" id="view-all-link">Ver Todas <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="latest-news" id="latest-news-container">
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="New smartphone with advanced features">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">TECNOLOGÍA</span>
+                            <h3><a href="#">New Smartphone Features Breakthrough Battery Technology</a></h3>
+                            <div class="card-meta">
+                                <span class="author">John Smith</span>
+                                <span class="time">3 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="Business executives shaking hands">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">NEGOCIOS</span>
+                            <h3><a href="#">Major Merger Creates Largest Tech Conglomerate</a></h3>
+                            <div class="card-meta">
+                                <span class="author">Sarah Johnson</span>
+                                <span class="time">5 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="Olympic stadium with athletes">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">DEPORTES</span>
+                            <h3><a href="#">Olympic Committee Announces Host City for 2032 Games</a></h3>
+                            <div class="card-meta">
+                                <span class="author">Michael Brown</span>
+                                <span class="time">7 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="Film director on movie set">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">ENTRETENIMIENTO</span>
+                            <h3><a href="#">Award-Winning Film Director Announces New Project</a></h3>
+                            <div class="card-meta">
+                                <span class="author">Emma Wilson</span>
+                                <span class="time">9 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Categories Section -->
+            <section class="categories-section" aria-labelledby="categories-heading">
+                <h2 id="categories-heading" class="visually-hidden">News Categories</h2>
+                <div class="categories-grid">
+                    <a href="#" class="category-card" data-category="world">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Mundo</h3>
+                        <p>Noticias internacionales y asuntos globales</p>
+                    </a>
+                    
+                    <a href="#" class="category-card" data-category="business">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business</h3>
+                        <p>Mercados, economía y finanzas</p>
+                    </a>
+                    
+                    <a href="#" class="category-card" data-category="technology">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Tecnología</h3>
+                        <p>Innovación, gadgets y noticias tecnológicas</p>
+                    </a>
+                    
+                    <a href="#" class="category-card" data-category="sports">
+                        <div class="category-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Deportes</h3>
+                        <p>Juegos, equipos y atletas</p>
+                    </a>
+                    
+                    <a href="#" class="category-card" data-category="health">
+                        <div class="category-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Salud</h3>
+                        <p>Medicina, bienestar e investigación</p>
+                    </a>
+                    
+                    <a href="#" class="category-card" data-category="entertainment">
+                        <div class="category-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Entretenimiento</h3>
+                        <p>Películas, música y celebridades</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3>Global News</h3>
+                        <p class="footer-tagline">Iosed Mendoza. Entregando noticias desde el 10 de diciembre 2025</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Categorias</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-category="world">Noticias Mundiales</a></li>
+                        <li><a href="#" data-category="politics">Politica</a></li>
+                        <li><a href="#" data-category="business">Negocios & Finananzas</a></li>
+                        <li><a href="#" data-category="technology">Technologia</a></li>
+                        <li><a href="#" data-category="health">Salud & Ciencia</a></li>
+                        <li><a href="#" data-category="entertainment">Entretenimiento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre mí</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Carrera</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos del Servicio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contáctanos</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Alumno: Iosed Mendoza Flores</p>
+                        <p><i class="fas fa-phone"></i> Desarrollo Web del lado del cliente v2</p>
+                        <p><i class="fas fa-envelope"></i> Reto 5.</p>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Subscribete para más noticias</h5>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Tu direccion de correo">
+                            <button type="submit">Subscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy;  Diciembre 2025. Derechos reservados</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Politica de Privacidad</a>
+                    <a href="#">Terminos de Servicio</a>
+                    <a href="#">Politica de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading latest news...</p>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="news-website.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
